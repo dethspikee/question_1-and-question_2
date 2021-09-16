@@ -28,7 +28,7 @@ class Goldendoodle(Dog):
     def bark(self) -> str:
         return "WOOF WOOF!"
 
-    def move(self):
+    def move(self) -> str:
         return "Running fast"
 
 
