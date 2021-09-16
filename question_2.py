@@ -37,6 +37,10 @@ matty = Goldendoodle("Matty", 3, 17)
 
 
 def get_oldest_dog_name(dog_1: Union[Dog, Goldendoodle], dog_2: Union[Dog, Goldendoodle]) -> str:
+    """
+    Return the name of the older dog. Return appropriate message
+    if both are same age.
+    """
     if dog_1.age == dog_2.age:
         return f"{dog_1} and {dog_2} are same age."
 
