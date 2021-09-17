@@ -44,7 +44,7 @@ def get_oldest_dog_name(dog_1: Union[Dog, Goldendoodle], dog_2: Union[Dog, Golde
     if dog_1.age == dog_2.age:
         return f"{dog_1} and {dog_2} are same age."
 
-    return max(dog_1, dog_2, key=lambda x: x.age)
+    return max(dog_1, dog_2, key=lambda dog: dog.age)
 
 
 print(get_oldest_dog_name(django, matty))
