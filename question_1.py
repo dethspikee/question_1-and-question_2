@@ -14,6 +14,7 @@ def compute_cube(x: int, y: int) -> list:
         sys.exit(1)
 
 
-print(compute_cube(2, 3))
-print(compute_cube(1, 4))
-print(compute_cube([], 4))
+if __name__ == "__main__":
+    print(compute_cube(2, 3))
+    print(compute_cube(1, 4))
+    print(compute_cube([], 4))

@@ -47,4 +47,5 @@ def get_oldest_dog_name(dog_1: Union[Dog, Goldendoodle], dog_2: Union[Dog, Golde
     return max(dog_1, dog_2, key=lambda dog: dog.age)
 
 
-print(get_oldest_dog_name(django, matty))
+if __name__ == "__main__":
+    print(get_oldest_dog_name(django, matty))
